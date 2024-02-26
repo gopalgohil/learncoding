@@ -1,0 +1,73 @@
+<?php
+include 'login_con.php';
+
+if(isset($_POST['submit'])){
+     
+    $email=$_POST['email'];
+    $password=$_POST['password'];
+    
+
+    $sql="insert into `user_login`(email,password) values('$email','$password')";
+    $result=mysqli_query($con,$sql);
+
+    if($result){
+        echo "Inserted Data..";
+    }
+    else{
+        echo "No Inserted Data";
+    }
+}
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="login_1.css">
+</head>
+<body>
+    </script>
+    <div class="container">
+        <form method="post" autocomplete="off">
+            <div class="form">
+                <i class="ri-close-line" id="close"></i>
+                <img src="user_2.png" alt="" id="img-2"><hr>
+         <label id="user">Username :</label><br>
+         <input type="text" name="email" id="input-1" placeholder="       Username" required><br>
+         <i class="ri-user-3-fill" id="home"></i>
+         <label id="pass">Password :</label><br>
+         <input type="password" name="password"   id="input-2" placeholder="        Password" required><br>
+         <i class="ri-eye-off-fill" id="pass_1"></i>
+         <input type="checkbox" name="checkbox" id="check" required>Remeber me 
+         <input type="submit" name="submit" id="btn" value="Login">
+         
+            </div>
+        </form>
+    </div>
+    <script>
+        let close_1=document.querySelector("#close");
+        let container=document.querySelector(".container");
+
+        let pass_1=document.querySelector("#pass_1");
+        let input_2=document.querySelector("#input-2");
+        pass_1.addEventListener("click",function(){
+           
+            if(input_2.type==="password"){
+                input_2.type="text"
+            }
+            else{
+                input_2.type="password";
+            }
+        })
+            
+         
+
+        close_1.addEventListener("click",function(){
+            container.style.display='none';
+        })
+       
+    </script>
+</body>
+</html>

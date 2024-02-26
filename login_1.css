@@ -1,0 +1,96 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#img-2 {
+    width: 100px;
+    height: 100px;
+    margin-top: 1px;
+    margin-left: 52px;
+
+}
+
+.container {
+
+    border: solid 3px black;
+    width: 280px;
+    height: 450px;
+    margin-top: 120px;
+    border-radius: 30px;
+}
+
+.form {
+    margin: 37px;
+    margin-top: 30px;
+
+}
+
+#input-1 {
+    padding: 10px;
+    margin: 10px;
+}
+
+#input-2 {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+#user,
+#pass {
+    font-size: 19px;
+}
+#home{
+    position: absolute;
+    margin-top: -40px;
+    margin-left: 17px;
+    font-size: 17px;
+}
+#pass_1{
+    position: absolute;
+    margin-top: -40px;
+    margin-left: 187px;
+    font-size: 17px;
+}
+ #input-1,
+#input-2:hover {
+    cursor: pointer;
+    color: blue;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#btn {
+    padding: 5px;
+    margin: 14px;
+    width: 110px;
+    margin-left: 50px;
+    background-color: #4224A5;
+    color: aliceblue;
+    font-size: 2vh;
+    font-weight: 700;
+    border-radius: 10px;
+}
+
+hr {
+    margin-left: 0.5vh;
+}
+
+#btn:hover {
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#check {
+    margin: 6px;
+}
+#close{
+    position: absolute;
+    align-items: center;
+    margin-left: 190px;
+    font-size: 40px;
+    margin-top: -20px;
+}
